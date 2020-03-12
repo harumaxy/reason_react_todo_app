@@ -3,9 +3,6 @@ open Action;
 
 type state = {todos: list(todo)};
 
-// 長いのでエイリアス
-let toString = ReasonReact.string;
-
 let todoId = ref(0);
 let newTodo = text => {
   todoId := todoId^ + 1;
@@ -32,9 +29,9 @@ let reducer = (state: state, action: action) => {
 let make = () => {
   let (state, dispatch) = React.useReducer(reducer, {todos: []});
   <main>
-    <h1 className="title"> {toString("ReasonReact TodoApp")} </h1>
+    <h1 className="title"> {React.string("ReasonReact TodoApp")} </h1>
     <TodoInput dispatch />
-    {List.map(todo => <TodoItem todo />, state.todos)
+    {List.map(todo => <TodoItem todo dispatch />, state.todos)
      ->List.rev
      ->Array.of_list
      ->React.array}
