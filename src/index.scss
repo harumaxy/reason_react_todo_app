@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import "../node_modules/bulma/bulma.sass";
+
+body {
+  margin: 0;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+main {
+  @extend .box;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.todoInputForm {
+  @extend .control;
+  display: flex;
+  direction: row;
+  :nth-child(1) {
+    @extend .input;
+    @extend .is-primary;
+  }
+  :nth-child(2) {
+    @extend .button;
+    @extend .is-primary;
+  }
+  padding-bottom: 20px;
+}
+
+.todoItem {
+  @extend .box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+
+  input {
+    @extend .checkbox;
+    transform: scale(2);
+    content: "";
+  }
+  span {
+    padding-left: 20px;
+    overflow: hidden;
+    font-size: x-large;
+  }
+}
