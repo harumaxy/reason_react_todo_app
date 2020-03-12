@@ -17,7 +17,7 @@ let make = (~dispatch) => {
       onChange={e => e->Utils.valueFromEvent->setTodoText}
     />
     <button type_="submit" onClick={_ => Js.log("hello")}>
-      {React.string("add")}
+      {React.string("Add")}
     </button>
   </form>;
 };
