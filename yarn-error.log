@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/masaharuhosomichi/.nodebrew/node/v13.3.0/bin/node /Users/masaharuhosomichi/.nodebrew/current/bin/yarn add bluma
+  /Users/masaharuhosomichi/.nodebrew/node/v13.3.0/bin/node /Users/masaharuhosomichi/.nodebrew/current/bin/yarn add bs-revamp
 
 PATH: 
   /Users/masaharuhosomichi/.opam/ocaml-base-compiler.4.08.1/bin:/Users/masaharuhosomichi/.pyenv/shims:/usr/local/opt/sqlite/bin:/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:/Users/masaharuhosomichi/.nodebrew/current/bin:/Users/masaharuhosomichi/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/masaharuhosomichi/.opam/ocaml-base-compiler.4.08.1/bin:/Users/masaharuhosomichi/.pyenv/shims:/usr/local/opt/sqlite/bin:/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:/Users/masaharuhosomichi/.nodebrew/current/bin:/Users/masaharuhosomichi/.cargo/bin:/Users/masaharuhosomichi/development/flutter/bin:/Users/masaharuhosomichi/.pub-cache/bin:/Users/masaharuhosomichi/development/flutter/bin:/Users/masaharuhosomichi/.pub-cache/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/bluma: Not found
+  Error: https://registry.yarnpkg.com/bs-revamp: Not found
       at Request.params.callback [as _callback] (/Users/masaharuhosomichi/.nodebrew/node/v13.3.0/lib/node_modules/yarn/lib/cli.js:66938:18)
       at Request.self.callback (/Users/masaharuhosomichi/.nodebrew/node/v13.3.0/lib/node_modules/yarn/lib/cli.js:140622:22)
       at Request.emit (events.js:219:5)
@@ -53,6 +53,7 @@ npm manifest:
     },
     "devDependencies": {
       "bs-platform": "^7.2.1",
+      "bulma": "^0.8.0",
       "css-loader": "^3.2.0",
       "html-webpack-plugin": "^3.2.0",
       "node-sass": "^4.13.1",
@@ -704,6 +705,11 @@ Lockfile:
     version "3.0.0"
     resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
     integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
+  
+  bulma@^0.8.0:
+    version "0.8.0"
+    resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.8.0.tgz#ac1606431703a4761b18a4a2d5cc1fa864a2aece"
+    integrity sha512-nhf3rGyiZh/VM7FrSJ/5KeLlfaFkXz0nYcXriynfPH4vVpnxnqyEwaNGdNCVzHyyCA3cHgkQAMpdF/SFbFGZfA==
   
   bytes@3.0.0:
     version "3.0.0"
